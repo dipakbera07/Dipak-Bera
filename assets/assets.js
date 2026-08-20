@@ -44,7 +44,11 @@ import express from './expressjs.png';
 import javascript from './js.webp';
 import cpp from './cpp.png';
 import github from './github.png';
-import postman from './postman.svg'
+import postman from './postman.svg';
+import python from "./python-logo.webp";
+import numpy from './numpy.png';
+import pandas from './pandas.webp';
+import analysis from './analysis.png';
 
 
 
@@ -96,31 +100,28 @@ export const assets = {
     javascript,
     cpp,
     github,
-    postman
+    postman,
+    python,
+    numpy,
+    pandas,
+    analysis
     
 };
 
 export const workData = [
     {
-        title: 'Frontend project',
-        description: 'Web Design',
-        bgImage: '/work-1.png',
+        title: 'Chatify',
+        description: 'Chat app',
+        bgImage: "/chatify.png",
+        link: "https://dipak-chatify.vercel.app/"
     },
     {
-        title: 'Geo based app',
-        description: 'Mobile App',
-        bgImage: '/work-2.png',
+        title: 'Reels Pro',
+        description: 'Social media',
+        bgImage: '/reels-pro.png',
+        link: "https://dipak-reels-pro.vercel.app/"
     },
-    {
-        title: 'Photography site',
-        description: 'Web Design',
-        bgImage: '/work-3.png',
-    },
-    {
-        title: 'UI/UX designing',
-        description: 'UI/UX Design',
-        bgImage: '/work-4.png',
-    },
+    
 ]
 
 export const serviceData = [
@@ -146,13 +147,19 @@ export const skillsData = [
       { icon: assets.express, name: "Express" },
       { icon: assets.mongodb, name: "MongoDB" },
     ]
-  },
-  
-  {
+  },{
+    title: "Data Science",
+    items: [
+      { icon: assets.numpy, name: "NumPy" },
+      { icon: assets.pandas, name: "Pandas" },
+      { icon: assets.analysis, name: "Basic Data Analysis" },
+    ]
+  },{
     title: "Programming",
     items: [
       { icon: assets.javascript, name: "JavaScript" },
       { icon: assets.cpp, name: "C++" },
+      { icon: assets.python, name: "Python" },
     ]
   },
   {
@@ -166,7 +173,7 @@ export const skillsData = [
 ];
 
 export const infoList = [
-    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Tech Stack', description: 'Full Stack Web Developer' },
+    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Tech Stack', description: 'Full-Stack Developer | AI & Data Science Enthusiast' },
     { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'B.Tech in Computer Science' },
     { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Built more than 5 projects' }
 ];

@@ -18,7 +18,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className="scroll-smooth ">
-      <body className={`${outfit.className}  antialiased dark:bg-[#171717] dark:text-white`}>
+      
+      <body className={`${outfit.className}  antialiased  dark:bg-[#171717] dark:text-white`}>
         {children}
       </body>
     </html>

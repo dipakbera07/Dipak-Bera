@@ -24,7 +24,7 @@ const About = ({isDarkMode}) => {
                 </div>
                 <div className={`flex-1 ${ovo.className} `}>
                     <p className={`${ovo.className} mb-10 max-w-2xl text-gray-600 dark:text-gray-300`}>
-                       I am a passionate Full-Stack MERN Developer with hands-on experience in building real-world applications like blogging platforms and secure web apps. I enjoy solving problems and continuously improving my development skills.
+                       Full-stack developer skilled in React.js, Next.js, Node.js, Express.js, MongoDB, and Tailwind CSS, with strong problem-solving and DSA skills. Currently expanding knowledge in AI, Data Science, and Machine Learning while building practical and scalable applications.
                     </p>
                     <ul className='grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl'>
                         {infoList.map(({icon,iconDark,title,description},index)=>(

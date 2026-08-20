@@ -21,8 +21,9 @@ const Work = () => {
             <h2 className={`${ovo.className} text-5xl text-center`}>My latest work</h2>
             <p className={`text-center max-w-2xl mx-auto mt-5 mb-12 ${ovo.className} text-gray-600  dark:text-gray-300`}>I am a Full stack Web Developer with 2 years of expericence | Currently doing my B-tech in Computer Science and Emgineering</p>
             <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 my-10'>
-                {workData.map(({ title, description, bgImage }, index) => (
+                {workData.map(({ title, description, bgImage, link }, index) => (
                     <div key={index} style={{ backgroundImage: `url(${bgImage})` }} className='aspect-square bg-no-repeat bg-cover relative bg-center cursor-pointer group'>
+                        <a href={link}>
                         <div className='bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between group-hover:bottom-7 duration-500'>
                             <div className=''>
                                 <h2 className={`text-sm text-gray-900 ${poppins.className} font-semibold`}>{title}</h2>
@@ -32,6 +33,7 @@ const Work = () => {
                                 <Image src={assets.send_icon} alt='' className='w-5' />
                             </div>
                         </div>
+                        </a>
                     </div>
                 ))}
             </div>

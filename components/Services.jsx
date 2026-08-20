@@ -21,18 +21,18 @@ const Services = ({isDarkMode}) => {
             <p className={`text-center max-w-2xl mx-auto mt-5 mb-12 ${ovo.className} text-gray-600 dark:text-gray-300`}>A complete overview of my technical skills, tools, and core computer science knowledge.</p>
             <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 my-10 '>
                 {skillsData.map((category, index) => (
-                    <div key={index}  className='dark:border-gray-700 dark:hover:bg-gray-800  dark:bg-gray-800 border border-gray-400 rounded-lg px-8 py-8 cursor-pointer  duration-500  h-90  flex flex-col items-center w-full hover:bg-[#fcf4ff]  hover:shadow-[3px_3px_rgba(0,0,0,10)]'>
+                    <div key={index}  className='dark:border-gray-700 dark:hover:bg-gray-800  dark:bg-gray-800 border border-gray-400 rounded-lg px-8 py-8 cursor-pointer  duration-500  h-90  flex flex-col items-center w-full hover:bg-[#fcf4ff]  '>
 
 
                                 {/* Category Title */}
-                                <h3 className='text-lg mb-4 text-gray-700 dark:text-white font-semibold'>
+                                <h3 className='text-lg mb-4 text-gray-700 dark:text-white font-semibold  border-b'>
                                     {category.title}
                                 </h3>
 
                                 {/* Skills */}
                                 <div className='flex flex-wrap gap-3'>
                                     {category.items.map((item, i) => (
-                                        <div key={i} className="flex items-center gap-2 dark:bg-[#1e293b] p-3 rounded-lg w-full border border-gray-700 dark:hover:bg-[#232e4e] hover:-translate-y-[0.5] duration-500 hover:shadow-[2px_2px_rgba(0,0,0,10)] dark:hover:shadow-[3px_3px_rgba(0,0,0,10)] hover:bg-[#e5dde9]">
+                                        <div key={i} className="flex items-center gap-2 dark:bg-[#1e293b] p-3 rounded-lg w-full border-b border-gray-700 dark:hover:bg-[#1e293b] hover:-translate-y-[0.5] duration-500 hover:shadow-[2px_2px_rgba(0,0,0,10)] dark:hover:shadow-[0px_3px_rgba(0,0,0,10)] hover:bg-[#e5dde9]">
                                             <Image src={item.icon} alt={item.name} className='w-5 dark:invert' />
                                             <span className='text-sm'>{item.name}</span>
                                         </div>
