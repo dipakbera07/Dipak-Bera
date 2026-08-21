@@ -1,5 +1,6 @@
 import { Outfit } from "next/font/google";
 import "./globals.css";
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 
 const outfit = Outfit({
@@ -22,6 +23,7 @@ export default function RootLayout({ children }) {
       
       <body className={`${outfit.className}  antialiased  dark:bg-[#171717] dark:text-white`}>
         {children}
+        <SpeedInsights />
       </body>
     </html>
   );
