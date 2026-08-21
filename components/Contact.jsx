@@ -48,21 +48,21 @@ const Contact = () => {
             <form className='max-w-2xl mx-auto dark:text-black' onSubmit={onSubmit}>
                 <div className='grid grid-cols-1 md:grid-cols-2 gap-6 mt-10 mb-8'>
                     <input
-                        className='flex-1 border-[0.5] border-gray-400 bg-white rounded-lg outline-none p-3 dark:text-black dark:bg-gray-300'
+                        className='flex-1 border-[0.5] border-gray-700 bg-white rounded-lg outline-none p-3 dark:text-white dark:bg-gray-800'
                         name='name'
                         type="text" placeholder='Enter your name' required  />
                     <input
-                        className='flex-1 border-[0.5] border-gray-400 bg-white rounded-lg outline-none p-3 dark:text-black dark:bg-gray-300'
+                        className='flex-1 border-[0.5] border-gray-700 bg-white rounded-lg outline-none p-3 dark:text-white dark:bg-gray-800'
                         name='email'
                         type="email" placeholder='Enter your email' required  />
                 </div>
                 <textarea
-                    className='w-full border-[0.5] border-gray-400 bg-white rounded-lg outline-none p-3 dark:text-black dark:bg-gray-300 '
+                    className='w-full border-[0.5] border-gray-700 dark:text-white  rounded-lg outline-none p-3  dark:bg-gray-800 '
                     name="message"
                     rows='6' id=""
                     placeholder='Enter your message'
                     ></textarea>
-                <button type='submit' className='w-max flex justify-center items-center gap-2 mx-auto border-[0.5] text-gray-700 border-gray-400 px-5 py-3 rounded-full hover:bg-[#fcf4ff] duration-500  hover:text-black dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white mt-5'>Submit now <Image src={assets.right_arrow_white} alt='' className='w-4' /></button>
+                <button type='submit' className=' cursor-pointer w-max flex justify-center items-center gap-2 mx-auto border-[0.5] text-gray-700 border-gray-400 px-5 py-3 rounded-full hover:bg-[#ecf0f4] duration-500  hover:text-black dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white mt-5'>Submit now <Image src={assets.right_arrow_white} alt='' className='w-4' /></button>
 
                 <p className='mt-5'>{result}</p>
             </form>

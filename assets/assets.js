@@ -49,6 +49,10 @@ import python from "./python-logo.webp";
 import numpy from './numpy.png';
 import pandas from './pandas.webp';
 import analysis from './analysis.png';
+import leetcode from './leetcode-logo.png';
+import linkedin from './linkedin.png';
+import x from './x-logo.png';
+import call from './call.png';
 
 
 
@@ -104,20 +108,26 @@ export const assets = {
     python,
     numpy,
     pandas,
-    analysis
+    analysis,
+    x,
+    linkedin,
+    leetcode,
+    call
     
 };
 
 export const workData = [
     {
         title: 'Chatify',
-        description: 'Chat app',
+        description1: 'Developed a real-time messaging platform with secure user authentication',
+        description2: 'Implemented real-time messaging and image sharing using Socket.IO and Cloudinary.',
         bgImage: "/chatify.png",
         link: "https://dipak-chatify.vercel.app/"
     },
     {
         title: 'Reels Pro',
-        description: 'Social media',
+        description1: 'Developed a social media platform for sharing images and videos',
+        description2: 'Integrated ImageKit for media management and Resend for email verification.',
         bgImage: '/reels-pro.png',
         link: "https://dipak-reels-pro.vercel.app/"
     },
@@ -132,52 +142,71 @@ export const serviceData = [
 ]
 
 export const skillsData = [
+  { icon: assets.react, name: "React" },
+  { icon: assets.nextjs, name: "Next.js" },
+  { icon: assets.tailwindcss, name: "Tailwind CSS" },
+
+  { icon: assets.nodejs, name: "Node.js" },
+  { icon: assets.express, name: "Express.js" },
+  { icon: assets.mongodb, name: "MongoDB" },
+
+  { icon: assets.numpy, name: "NumPy" },
+  { icon: assets.pandas, name: "Pandas" },
+  { icon: assets.analysis, name: "Basic Data Analysis" },
+
+  { icon: assets.javascript, name: "JavaScript" },
+  { icon: assets.cpp, name: "C++" },
+  { icon: assets.python, name: "Python" },
+
+  { icon: assets.git, name: "Git" },
+  { icon: assets.github, name: "GitHub" },
+  { icon: assets.postman, name: "Postman" },
+];
+export const educationData = [
   {
-    title: "Frontend",
-    items: [
-      { icon: assets.react, name: "React" },
-      { icon: assets.nextjs, name: "Next.js" },
-      { icon: assets.tailwindcss, name: "Tailwind" },
-    ]
+    degree: "B.Tech in Computer Science and Engineering",
+    college: "Budge Budge Institute of Technology",
+    cgpa: "7.5",
+    percentage: "75%",
+    date: "08/2024 - Present",
   },
   {
-    title: "Backend",
-    items: [
-      { icon: assets.nodejs, name: "Node.js" },
-      { icon: assets.express, name: "Express" },
-      { icon: assets.mongodb, name: "MongoDB" },
-    ]
-  },{
-    title: "Data Science",
-    items: [
-      { icon: assets.numpy, name: "NumPy" },
-      { icon: assets.pandas, name: "Pandas" },
-      { icon: assets.analysis, name: "Basic Data Analysis" },
-    ]
-  },{
-    title: "Programming",
-    items: [
-      { icon: assets.javascript, name: "JavaScript" },
-      { icon: assets.cpp, name: "C++" },
-      { icon: assets.python, name: "Python" },
-    ]
+    degree: "Diploma in Computer Science and Technology",
+    college: "Contai Polytechnic",
+    cgpa: "7.4",
+    percentage: "74%",
+    date: "11/2021 - 04/2024",
   },
   {
-    title: "Tools",
-    items: [
-      { icon: assets.git, name: "Git" },
-      { icon: assets.github, name: "github" },
-      { icon: assets.postman, name: "Postman" },
-    ]
-  }
+    degree: "Secondary / Madhyamik",
+    college: "Nilda High School",
+    cgpa: null,
+    percentage: "80%",
+    date: "01/2015 - 04/2021",
+  },
 ];
 
 export const infoList = [
     { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Tech Stack', description: 'Full-Stack Developer | AI & Data Science Enthusiast' },
-    { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'B.Tech in Computer Science' },
-    { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Built more than 5 projects' }
+    { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'B.Tech in Computer Science and Engineering' },
+    { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Built and deployed multiple full-stack projects.' }
 ];
 
 export const toolsData = [
-    assets.vscode, assets.firebase, assets.mongodb, assets.figma, assets.git
+  {
+    icon: assets.linkedin,
+    link: "https://www.linkedin.com/in/dipakbera07/",
+  },
+  {
+    icon: assets.github,
+    link: "https://github.com/dipakbera07",
+  },
+  
+  {
+    icon: assets.x,
+    link: "https://x.com/dbera20050",
+  },{
+    icon: assets.leetcode,
+    link: "https://leetcode.com/u/dipakbera07/",
+  }
 ];

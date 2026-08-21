@@ -40,9 +40,9 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
         <ul className={`${ovo.className} hidden md:flex items-center gap-6 lg:gap-8 px-12 py-3 rounded-full ${isScroll ? "" : "bg-white shadow-sm bg-opacity-50"}  dark:border  dark:border-gray-700 dark:shadow-lg dark:bg-gray-800`}>
           <li><a className={`${ovo.className}`} href="#home">Home</a></li>
           <li><a className={`${ovo.className}`} href="#about">About me</a></li>
-          <li><a className={`${ovo.className}`} href="#services">Services</a></li>
-          <li><a className={`${ovo.className}`} href="#work">My Work</a></li>
-          <li><a className={`${ovo.className}`} href="#contact">Contact me</a></li>
+          <li><a className={`${ovo.className}`} href="#services">Skills</a></li>
+          <li><a className={`${ovo.className}`} href="#work">Projects</a></li>
+          <li><a className={`${ovo.className}`} href="#education">Education</a></li>
         </ul>
 
         <div className='flex gap-4 items-center'>
