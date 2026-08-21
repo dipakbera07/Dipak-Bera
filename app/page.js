@@ -1,4 +1,5 @@
-"use client"
+"use client";
+
 import About from "@/components/About";
 import Contact from "@/components/Contact";
 import Education from "@/components/Education";
@@ -7,44 +8,46 @@ import Header from "@/components/Header";
 import Navbar from "@/components/Navbar";
 import Services from "@/components/Services";
 import Work from "@/components/Work";
-import Image from "next/image";
 import { useEffect, useState } from "react";
 
 export default function Home() {
+  // Dark mode is the default
+  const [isDarkMode, setIsDarkMode] = useState(true);
 
-  const [isDarkMode, setIsDarkMode] = useState(false)
-
-useEffect(() => {
-  const theme = localStorage.getItem("theme")
-
-  if (theme === "dark") {
-    setIsDarkMode(true)
-  } else {
-    setIsDarkMode(false)
-  }
-}, [])
-  
-
+  // Load saved theme
   useEffect(() => {
-    if(isDarkMode){
-      document.documentElement.classList.add("dark")
-      localStorage.theme='dark';
+    const theme = localStorage.getItem("theme");
+
+    if (theme === "light") {
+      setIsDarkMode(false);
+    } else {
+      setIsDarkMode(true);
     }
-    else{
-      document.documentElement.classList.remove("dark")
-      localStorage.theme='light';
+  }, []);
+
+  // Apply theme
+  useEffect(() => {
+    if (isDarkMode) {
+      document.documentElement.classList.add("dark");
+      localStorage.setItem("theme", "dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+      localStorage.setItem("theme", "light");
     }
-  }, [isDarkMode])
-  
+  }, [isDarkMode]);
 
   return (
     <>
-      <Navbar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
+      <Navbar
+        isDarkMode={isDarkMode}
+        setIsDarkMode={setIsDarkMode}
+      />
+
       <Header isDarkMode={isDarkMode} />
       <About isDarkMode={isDarkMode} />
       <Services isDarkMode={isDarkMode} />
       <Work isDarkMode={isDarkMode} />
-      <Education isDarkMode={isDarkMode}/>
+      <Education isDarkMode={isDarkMode} />
       <Contact isDarkMode={isDarkMode} />
       <Footer isDarkMode={isDarkMode} />
     </>
