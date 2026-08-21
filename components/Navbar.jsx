@@ -61,11 +61,11 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
 
 
         {/* ------------ Mobile Menu -------- */}
-        <div className={`md:hidden h-screen bg-rose-50 transition duration-500 fixed right-0 top-0 bottom-0 w-64 z-50 ${menu ? "translate-x-0" : "translate-x-full"} dark:bg-gray-800`}>
+        <div className={`md:hidden h-screen bg-gray-100 transition duration-500 fixed right-0 top-0 bottom-0 w-64 z-50 ${menu ? "translate-x-0" : "translate-x-full"} dark:bg-gray-800`}>
           <div className='absolute  md:hidden top-6 right-6 z-60 ' onClick={() => { setMenu(false) }}>
             <Image src={isDarkMode ? assets.close_white : assets.close_black} alt='' className='w-5 cursor-pointer' />
           </div>
-          <ul className='flex  flex-col gap-4 px-10 py-20 '>
+          <ul className='flex  flex-col gap-5 px-10 py-20 '>
             <li onClick={() => setMenu(false)}><a className={`${ovo.className}`} href="#home">Home</a></li>
             <li onClick={() => setMenu(false)}><a className={`${ovo.className}`} href="#about">About me</a></li>
             <li><a className={`${ovo.className}`} href="#services">Skills</a></li>
