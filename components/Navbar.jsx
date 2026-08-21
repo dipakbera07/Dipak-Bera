@@ -68,9 +68,9 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
           <ul className='flex  flex-col gap-4 px-10 py-20 '>
             <li onClick={() => setMenu(false)}><a className={`${ovo.className}`} href="#home">Home</a></li>
             <li onClick={() => setMenu(false)}><a className={`${ovo.className}`} href="#about">About me</a></li>
-            <li onClick={() => setMenu(false)}><a className={`${ovo.className}`} href="#services">Services</a></li>
-            <li onClick={() => setMenu(false)}><a className={`${ovo.className}`} href="#work">My Work</a></li>
-            <li onClick={() => setMenu(false)}><a className={`${ovo.className}`} href="#contact">Contact me</a></li>
+            <li><a className={`${ovo.className}`} href="#services">Skills</a></li>
+            <li><a className={`${ovo.className}`} href="#work">Projects</a></li>
+            <li><a className={`${ovo.className}`} href="#education">Education</a></li>
           </ul>
         </div>
 
